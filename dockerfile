@@ -16,4 +16,4 @@ copy . /src/
 RUN chmod +x /src/start.sh
 
 # Run the start script
-CMD /src/start.sh
+CMD ./src/start.sh
