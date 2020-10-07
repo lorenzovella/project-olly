@@ -15,5 +15,7 @@ copy . /src/
 # Ensure the start script is executable
 RUN chmod +x /src/start.sh
 
+RUN sed -i 's/\r$//' /src/start.sh
+
 # Run the start script
-CMD ./src/start.sh
+CMD /src/start.sh
